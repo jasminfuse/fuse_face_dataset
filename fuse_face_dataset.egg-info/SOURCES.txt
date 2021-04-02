@@ -1,7 +1,0 @@
-setup.py
-fuse_face_dataset.egg-info/PKG-INFO
-fuse_face_dataset.egg-info/SOURCES.txt
-fuse_face_dataset.egg-info/dependency_links.txt
-fuse_face_dataset.egg-info/not-zip-safe
-fuse_face_dataset.egg-info/requires.txt
-fuse_face_dataset.egg-info/top_level.txt
