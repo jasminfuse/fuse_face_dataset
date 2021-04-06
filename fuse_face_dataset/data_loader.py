@@ -17,7 +17,7 @@ def load_face_data():
 
     label_dict=dict(zip(categories,labels)) #empty dictionary
 
-    img_size=100
+    img_size=224
     data=[]
     target=[]
 
@@ -43,7 +43,7 @@ def load_face_data():
                 #if any exception raised, the exception will be printed here. And pass to the next image
 
     data=np.array(data)/1.0
-    data=np.reshape(data,(data.shape[0],img_size,img_size,1))
+    data=np.reshape(data,(data.shape[0],img_size,img_size,3))
     target=np.array(target)
 
     new_target=np_utils.to_categorical(target)
