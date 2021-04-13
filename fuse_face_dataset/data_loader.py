@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img
 
 
 def load_face_data():
-    data_path='7-2P-dataset'
+    data_path='7-2P-dataset_renamed'
     if not os.path.isdir(data_path):
         download_url(output_path='dataset.zip',url=url)
 

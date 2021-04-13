@@ -3,7 +3,7 @@ import gzip
 import os, shutil
 from zipfile import ZipFile
 
-url = 'https://storage.googleapis.com/codehub-data/7-2P-dataset.zip'
+url = 'https://storage.googleapis.com/codehub-data/7-2P-dataset_renamed.zip'
 
 import urllib.request
 
@@ -33,20 +33,3 @@ def download_url(url, output_path):
 if __name__=='__main__':
     download_url(output_path='dataset.zip',url=url)
 
-
-
-# def get_data():
-#     url = 'https://storage.googleapis.com/codehub-data/7-2P-dataset.zip'
-#     urllib.request.urlretrieve(url,'dataset.zip')
-
-
-#     file_name='dataset.zip'
-
-#     with ZipFile(file_name, 'r') as zipped:
-#         zipped.printdir()
-
-#         print('Extracting all files')
-#         zipped.extractall()
-#         print('Done!')
-
-# get_data()
