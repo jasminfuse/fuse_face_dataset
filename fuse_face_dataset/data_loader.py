@@ -41,9 +41,9 @@ def load_face_data():
     labels = np.array(labels)
 
     trainX, testX, trainY, testY = train_test_split(data, labels,test_size=0.20, stratify=labels, random_state=42)
-    return trainX, testX, trainY, testY
+    return data, labels
 
 if __name__=='__main__':
-    train_data,test_data,train_target,test_target = load_face_data()
+    data,target = load_face_data()
 
 
