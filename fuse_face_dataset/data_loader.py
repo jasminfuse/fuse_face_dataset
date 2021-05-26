@@ -2,7 +2,7 @@ import cv2,os
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
-from keras.utils import np_utils
+from tensorflow.keras.utils import np_utils
 from fuse_face_dataset.download_extract import download_url, url
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
